@@ -31,7 +31,7 @@ function App() {
     setSelectedSort(sort);
     console.log(sort); // tittle or body
     // on this stage we parse our array to a new array and compare sorted elements:
-    setPosts([...posts].sort((a, b) => a[sort].LocaleCompare(b[sort])));
+    setPosts([...posts].sort((a, b) => a[sort].localeCompare(b[sort]), "en"));
   };
 
   // alternative variant - it works!!!:
