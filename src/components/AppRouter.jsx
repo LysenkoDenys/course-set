@@ -5,7 +5,7 @@ import Posts from "../pages/Posts";
 import Error from "../pages/Error";
 import Login from "../pages/Login";
 import PostsIdPage from "../pages/PostIdPage";
-import loader from "./UI/Loader/Loader";
+import Loader from "./UI/Loader/Loader";
 import { privateRoutes, publicRoutes } from "../router";
 import { AuthContext } from "../context";
 
@@ -14,7 +14,7 @@ const AppRouter = () => {
   console.log(isAuth);
 
   if (isLoading) {
-    return <loader />;
+    return <Loader />;
   }
 
   return isAuth ? (
